@@ -1,1 +1,13 @@
-/* Add CSS Styling */
+/* Below are chained selector classes */
+
+/* Do not need a class for 'original' as there is no style for it. */
+
+.avatar.proportioned {
+    height: auto;
+    width: 300px;
+}
+
+.avatar.distorted {
+    width: 200px;
+    height: 400px;
+}
