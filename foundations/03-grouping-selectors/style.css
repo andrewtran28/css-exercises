@@ -1,0 +1,16 @@
+/* Grouping selector for elements that share styles */
+.first, .second {
+    font-size: 28px;
+    font-family: Helvetica, "Times New Roman", sans-serif
+}
+
+/* Unique styles for each class */
+.first{
+    background-color: #000000;
+    color: white;
+    font-weight: 700;
+}
+
+.second{
+    background-color: #eeee11
+}
