@@ -1,3 +1,7 @@
+/* The Odin Project Flex Exercise Three */
+/* This exercise is useful as a header template for a webpage. */
+/* Dashed borders are shown to visualize solution */
+
 /* this is some magical font-importing.  
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
@@ -12,6 +16,12 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+
+  border: 2px dashed red;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
 }
 
 .profile-image {
@@ -27,6 +37,10 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
 }
 
 button {
@@ -45,4 +59,27 @@ a {
 
 ul {
   list-style-type: none;
+
+  display: flex;
+  gap: 8px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  border: 1px dashed blue;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-button {
+  border: 1px dashed green;
+  display: flex;
+  
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
 }
