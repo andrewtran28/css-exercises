@@ -1,6 +1,14 @@
+/* The Odin Project Flex Exercise Two */
+/* This Exercise is useful for creating a header layout of a webpage. */
+
 .header  {
   font-family: monospace;
   background: papayawhip;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
 }
 
 .logo {
@@ -9,11 +17,20 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+
+  display: flex;
+  align-items: center;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+
+  display: flex;
+  gap: 30px;
+  /* Margin and padding set to zero to allow header to links to reach edge of screen */
+  margin: 0;
+  padding: 0;
 }
 
 a {
