@@ -1,4 +1,10 @@
+/* The Odin Project Flex Exercise 1 */
+
 .container {
+  /* Only need to add flex elements to .container (display, justify-content, and align-items */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: dodgerblue;
   border: 4px solid midnightblue;
   width: 400px;
