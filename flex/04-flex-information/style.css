@@ -1,3 +1,7 @@
+/* The Odin Project Flex Exercise Four */
+
+/*Borders are left in to visualize solution*/
+
 body {
   font-family: 'Courier New', Courier, monospace;
 }
@@ -10,6 +14,10 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
 }
 
 /* do not edit this footer */
@@ -23,4 +31,25 @@ img {
   align-items: center;
   justify-content: center;
   background: #eee;
+}
+
+.icons {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: spaced-evenly;
+  gap: 52px;
+}
+
+.items {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+.text {
+  text-align: center;
+  width: 200px;
 }
