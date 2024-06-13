@@ -1,29 +1,89 @@
+/* The Odin Project Flex Exercise 7 */
+
+/* Borders are shown to visualize solution. */
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+
+  border: 3px dashed black;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 16px;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  padding: 10px;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: 32px;
+  font-weight: 900;
+
+  align-items: center;
+  padding: 16px;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  display: flex;
+  flex-shrink: 0;
+
+  font-size: 24px;
+  padding: 10px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  padding: 48px;
+  margin: 16px;
+
+  width: 300px;
+  height: 300px;
+}
+
+.cardcont {
+  border: 2px dashed green;
+  display: flex; 
+  flex-wrap: wrap;
+  flex: auto;
+}
+
+.container {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 0; /* Same as flex: 1 */
 }
