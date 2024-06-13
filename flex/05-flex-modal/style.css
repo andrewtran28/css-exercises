@@ -1,3 +1,6 @@
+/* The Odin Project Flex Exercise Five */
+/* Borders are left in to visualize solution */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 html, body {
@@ -20,6 +23,11 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+  border: 1px solid red;
+  display: flex;
+  padding: 10px;
+
 }
 
 .icon {
@@ -33,6 +41,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  margin: 0 10px 0 0;
+  flex-shrink: 0;
+
 }
 
 .close-button {
@@ -66,4 +78,28 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.container {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.areyousure {
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0 10px 5px 0;
+}
+
+.buttoncont {
+  border: 1px solid orange;
+  display: flex;
+  gap: 5px;
 }
