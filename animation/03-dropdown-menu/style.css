@@ -19,6 +19,9 @@
   background-color: rgb(99, 97, 97);
 
   display: none;
+
+  animation: dropdown-bounce 750ms;
+  transform-origin: top;
 }
 
 ul.dropdown-menu li:hover {
@@ -29,4 +32,16 @@ ul.dropdown-menu li:hover {
   display: block;
 }
 
+@keyframes dropdown-bounce {
+  0%{
+    transform: scaleY(0);
+  }
 
+  75%{
+    transform: scaleY(1.05);
+  }
+
+  100%{
+    transform: scaleY(1);
+  }
+}
